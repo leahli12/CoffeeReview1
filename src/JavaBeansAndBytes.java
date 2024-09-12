@@ -9,9 +9,9 @@ import java.util.Random;
 public class JavaBeansAndBytes {
 
     // Variables for the CoffeeShop
-    String name;
-    boolean isOpen;
-    int yearFounded;
+    public String name;
+    public boolean isOpen;
+    public int yearFounded;
 
     public static void main(String[] args) {
         // Where the program starts
@@ -55,6 +55,8 @@ public class JavaBeansAndBytes {
         // Print out the order details
         espressoConPanna.printInfo();
         icedMocha.printInfo();
+
+        specialOfTheDay(icedMocha.getFlavor());
     }
 
     // Method to generate a random discount
