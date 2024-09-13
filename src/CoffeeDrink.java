@@ -26,11 +26,27 @@ class CoffeeDrink {
         System.out.println("There are " + numberOfCups + " cup(s) with the flavor " + flavor + " and it is " + hasWhippedCream + " that there is whipped cream.");
     }
 
+    public void setCups(int newCups){
+        numberOfCups = newCups;
+    }
+
+    public int getCups(){
+        return numberOfCups;
+    }
+
     public void setFlavor(String newFlavor){
         flavor = newFlavor;
     }
 
     public String getFlavor(){
         return flavor;
+    }
+
+    public void setCream(boolean cream){
+        hasWhippedCream = cream;
+    }
+
+    public boolean getCream(){
+        return hasWhippedCream;
     }
 }

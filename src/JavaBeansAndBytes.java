@@ -48,15 +48,19 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Create two CoffeeDrink objects
-        CoffeeDrink espressoConPanna = new CoffeeDrink(2, "espresso", true);
         CoffeeDrink icedMocha = new CoffeeDrink(4, "chocolate", false);
+        CoffeeDrink vanillaLatte = new CoffeeDrink(2, "espresso", true);
 
         // TODO
         // Print out the order details
-        espressoConPanna.printInfo();
+        vanillaLatte.printInfo();
         icedMocha.printInfo();
 
         specialOfTheDay(icedMocha.getFlavor());
+        vanillaLatte.setCups(3);
+        vanillaLatte.setFlavor("vanilla");
+        vanillaLatte.setCream(false);
+        System.out.println("There are " + vanillaLatte.getCups() + " cups of this " + vanillaLatte.getFlavor() + " drink. It is " + vanillaLatte.getCream() + " that it has whipped cream.");
     }
 
     // Method to generate a random discount
