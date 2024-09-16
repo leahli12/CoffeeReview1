@@ -51,6 +51,12 @@ public class JavaBeansAndBytes {
         CoffeeDrink icedMocha = new CoffeeDrink(4, "chocolate", false);
         CoffeeDrink vanillaLatte = new CoffeeDrink(2, "espresso", true);
 
+        for (int i = 0; i < 11; i++){
+            int randomCups = (int)(Math.random()*100);
+            CoffeeDrink randomDrink = new CoffeeDrink(randomCups, "vanilla", true);
+            randomDrink.printInfo();
+        }
+
         // TODO
         // Print out the order details
         vanillaLatte.printInfo();
